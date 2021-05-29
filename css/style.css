@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+}
+.container{
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.img{
+    height: 100px;
+    width: 160px;
+    margin:0 2px;
+    background-image: url(../img/foglia.jpg!d);
+    background-size: cover;
+}
+
+/*--- Nav della pagina ---*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 40, 40);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+nav li{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    align-items: center;
+
+}
+nav i{
+    font-size: 25px;
+}
+.li-green{
+    color: greenyellow;
+} 
+.li-red{
+    display: flex;
+    color: red;
+    background-color: rgb(80, 80, 80);
+}
