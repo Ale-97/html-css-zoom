@@ -1,0 +1,1940 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px !important
+    }
+}
+
+.wtb-box-loading {
+    z-index: 1
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3c3c3c;
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #58595b;
+}
+
+h1, h2, h3 {
+    /*text-transform: uppercase*/
+}
+
+p {
+    font-size: 14px
+}
+
+a {
+    color: #3c3c3c;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+#wtb-container {
+    max-width: 850px;
+    min-height: 600px;
+    background: #fff;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.wtb-title {
+    min-height: 85px;
+    background: #fff;
+    padding-top: 5px;
+    border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #eaf5ed;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.wtb-title .title {
+    background: #fff;
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #266bd6;
+}
+
+.wtb-title .title .desc-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    /*Vertical Centre*/
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.wtb-title .title .desc-container .desc-image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 12%;
+    flex: 0 0 12%;
+    max-width: 12%;
+    text-align: center;
+    /*display: none;*/
+}
+
+.wtb-title .title .desc-container .desc-image {
+    max-width: 12%;
+    height: auto;
+}
+
+.wtb-title .title .desc-container .desc-image img {
+    width: auto;
+    max-height: 100px;
+    position: relative;
+
+}
+
+.wtb-title .title .desc-container .desc-image .image-product {
+    max-height: 70px;
+    margin: auto;
+}
+
+.wtb-title .title .desc-container .desc-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 88%;
+    flex: 0 0 88%;
+    max-width: 88%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wtb-title .title .desc-container .desc-text h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #203284;
+}
+
+.wtb-title .title .desc-container .desc-text h4 {
+    display: none;
+}
+
+.wtb-title .title .desc-container .buyonline {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: none;
+}
+
+.wtb-title .title .desc-container .buyonline .price {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.wtb-title .title .desc-container .buyonline .price p {
+    margin-bottom: 0;
+}
+
+.wtb-title .title .desc-container .buyonline .button {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.wtb-title .logo {
+    display: none;
+}
+
+.wtb-title .price {
+    font-size: 30px;
+    color: #3c3c3c;
+    font-weight: bold
+}
+
+.wtb-nav {
+    background: #7ec04a;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.product_dropdown {
+    /*display: none;*/
+    display: inline-block;
+}
+.product_dropdown #variantSelect {
+    padding: 5px;
+    border-radius: 0px;
+    border: none;
+    max-width: 170px;
+    background: #fff;
+}
+
+.bobl .wtb-title {
+    margin-bottom: 0px;
+}
+
+.wtb-nav .group {
+    padding-right: 15px;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.wtb-nav .nav-tabs {
+    background: transparent;
+    padding: 0 1rem 0 0;
+    border: none;
+}
+
+.wtb-nav .nav-tabs .nav-item {
+    margin-bottom: initial;
+}
+
+.wtb-nav .nav-tabs .nav-item .nav-link {
+    color: #203284;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 30px;
+    border: none;
+    margin: 0px 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.wtb-nav .nav-tabs .nav-item .nav-link.active {
+    color: #203284;
+    background: #fff;
+}
+
+.wtb-nav .nav .nav-item:last-child {
+    margin-right: 5px
+}
+
+.wtb-nav .nav-tabs .nav-link:hover {
+    /*color: #fff;*/
+    border-color: transparent;
+}
+
+.wtb-online {
+    position: relative;
+    height: 380px;
+    float: none;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.wtb-online .retailer-block {
+    width: 29%;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 2%;
+    padding: 5px 10px;
+}
+.wtb-online .retailer-block .logo img {
+    max-width: 100%;
+}
+.wtb-online .retailer-block .stock {
+    display: none;
+}
+.wtb-online .retailer-block .price {
+    margin: 8px 0px;
+    color: #100b31;
+}
+
+
+/* BEGIN styles that only apply when the config option 'showSimpleOnline' is set to 'false' */
+
+.wtb-online .retailers-online {
+    position: relative;
+    padding: 10px;
+    width: 97%;
+    border-bottom: solid 1px #ddd;
+    margin: 0 auto;
+}
+
+.wtb-online .retailers-online .retailer-block {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.wtb-online .retailers-online .retailer-block .logo {
+    width: 25%;
+}
+.wtb-online .retailers-online .retailer-block .stock {
+    width: 50%;
+    display: inline-block;
+}
+.wtb-online .retailers-online .retailer-block .nearby {
+    width: 20%;
+    display: none;
+}
+.wtb-online .retailers-online .retailer-block .buy {
+    width: 25%;
+}
+
+.wtb-online .retailers-online .retailer-block .buy i {
+    display: none;
+}
+
+.wtb-online .retailers-online .retailer-block .stock p {
+    margin: 0
+}
+
+.wtb-online .retailers-online .retailer-block .stock .price {
+    font-size: 18px;
+    color: #3c3c3c;
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+}
+
+.wtb-online .retailers-online .retailer-block .stock .price p {
+    color: #6fb105;
+    font-weight: bold
+}
+
+.wtb-online .retailers-online .retailer-block .stock .status {
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+}
+.wtb-online .retailers-online .retailer-block .stock .status::before {
+    content: 'check_circle';
+    font-family: 'Material Icons';
+    color: #7ec04a;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -1px;
+}
+
+.wtb-online .retailers-online .retailer-block .stock.stock.instock .status {
+    color: #6fb105
+}
+
+.wtb-online .retailers-online .retailer-block .stock.stock.outstock .status {
+    color: #ff0000
+}
+.wtb-online .retailers-online .retailer-block .stock.outstock .status::before {
+    content: 'cancel';
+    font-family: 'Material Icons';
+    color: #ff0000;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -1px;
+}
+
+.wtb-online .retailers-online .retailer-block .buy .btn-addtocart {
+    margin-top: 5px
+}
+
+.wtb-online .retailers-online .retailer-block-mini {
+    width: 160px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.wtb-online .retailers-online .retailer-block-mini .stock p {
+    margin: 0
+}
+
+.wtb-online .retailers-online .retailer-block-mini .stock .price {
+    font-size: 30px;
+    color: #3c3c3c;
+    font-weight: bold
+}
+
+.wtb-online .retailers-online .retailer-block-mini .stock .price p {
+    color: #6fb105;
+    font-weight: bold
+}
+
+.wtb-online .retailers-online .retailer-block-mini .stock.stock.instock .status {
+    color: #6fb105
+}
+
+.wtb-online .retailers-online .retailer-block-mini .stock.stock.outstock .status {
+    color: #ff0000
+}
+
+.wtb-online .retailers-online .retailer-block-mini .buy .btn-addtocart {
+    margin-top: 5px
+}
+
+/* END styles that only apply when config option 'showSimpleOnline' is set to 'false' */
+
+#GetDirectionsPlaceholder {
+    display: block
+}
+
+.wtb-local {
+}
+
+.wtb-local .retailers-local #localList {
+    height: 412px !important;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.wtb-local .wtb-local-map #map {
+    position: relative;
+    height: 362px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-group-append {
+    margin-top: 7px;
+}
+
+.wtb-local .wtb-local-map #map .angular-google-map-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+}
+
+#searchBoxParent {
+    padding: 5px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+#searchBoxParent #searchLocation {
+    border: 0;
+    box-shadow: inset 0 0px 0px transparent;
+    font-weight: normal
+}
+
+#searchBoxParent .form-control.location {
+    width: 54%
+}
+
+#searchBoxParent .form-control.distance {
+    font-weight: normal;
+    border: 0;
+    border-left: 1px solid #c4c4c4;
+    margin-left: 10px;
+    box-shadow: inset 0 0px 0px transparent;
+    max-width: 35%
+}
+
+.slimScrollDiv {
+    height: initial !important;
+}
+
+.retailers-local .retailer-block {
+    background: #fff;
+    border-radius: 1px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 5px;
+}
+
+.retailers-local .retailer-block .distance {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.retailers-local .retailer-block .details {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.retailers-local .retailer-block .options {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.wtb-local .retailers-local .retailer-block .distance .box {
+    padding: 5px;
+    /*border-right: 1px solid lightgray;*/
+    /*border-bottom: 1px solid lightgray;*/
+    /*background: linear-gradient(to top left, rgba(220, 220, 220, 0), #dcdcdc);*/
+    color: black;
+    text-align: center;
+    font-size: 14px
+}
+
+.wtb-local .retailers-local .retailer-block .distance .box p {
+    margin-top: 10px;
+    background: #eaf5ed;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.wtb-local .retailers-local .retailer-block .distance .box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize
+}
+
+.wtb-local .retailers-local .retailer-block .distance .box .badge {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-image: url("https://origin.where-to-buy.co/dev/widgetv3/images/black-marker.png")
+}
+
+.wtb-local .retailers-local .retailer-block .details {
+    padding: 5px
+}
+
+.wtb-local .retailers-local .retailer-block .details .storeLogo {
+    cursor: pointer;
+    max-width: 100px;
+    max-height: 42px;
+    /* display: none; */
+}
+
+.wtb-local .retailers-local .retailer-block .details .title {
+    display: none;
+    margin: 0px;
+    font-size: 14px;
+    color: #666;
+}
+
+.wtb-local .retailers-local .retailer-block .details .title .counter {
+    display: none;
+}
+
+.wtb-local .retailers-local .retailer-block .details .address {
+    margin: 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.wtb-local .retailers-local .retailer-block .details .phone:before {
+    font-family: 'Material Icons';
+    content: "phone ";
+    color: #266bd6;
+    font-size: 16px;
+    margin-top: 2px;
+    position: relative;
+    bottom: -2px;
+}
+
+.wtb-local .retailers-local .retailer-block .details .phone {
+    margin: 0px;
+    color: #666;
+    font-weight: bold;
+    position: relative;
+}
+
+.wtb-local .retailers-local .retailer-block .details .hours:before {
+    font-family: 'Material Icons';
+    content: "access_time ";
+    color: #266bd6;
+    position: relative;
+    bottom: -2px;
+}
+
+.wtb-local .retailers-local .retailer-block .details .hours {
+    font-weight: bold;
+    margin: 0px;
+    position: relative;
+}
+
+.wtb-local .retailers-local .retailer-block .options {
+    padding-top: 15px
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock .price {
+    font-size: 22px;
+    line-height: 1;
+    color: #3c3c3c;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock .status {
+    margin: 5px 0px;
+    line-height: 16px;
+}
+/*
+.in-stock .status p:before {
+    font-family: 'Material Icons';
+    content: "check_circle ";
+}
+
+.out-stock .status p:before {
+    font-family: 'Material Icons';
+    content: "error_outline ";
+}
+*/
+.wtb-local .retailers-local .retailer-block .options .stock .status.instock .status {
+    color: #6fb105
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock .status.outstock .status {
+    color: #ff0000
+}
+
+
+.wtb-local .retailers-local .retailer-block .options .directions:before {
+    font-family: 'Material Icons';
+    content: "directions_car ";
+    font-size: 16px;
+    color: #266bd6;
+    position: relative;
+    bottom: -2px;
+}
+
+.wtb-local .retailers-local .retailer-block .options .directions {
+    font-weight: bold;
+    margin: 5px 0px 2px;
+    position: relative;
+}
+
+.wtb-local .retailers-local .retailer-block .options .buy:before {
+    font-family: 'Material Icons';
+    content: "open_in_new ";
+    color: #266bd6;
+    position: relative;
+    bottom: -2px;
+}
+
+.wtb-local .retailers-local .retailer-block .options .buy {
+    font-weight: bold;
+    margin: 0px 0px 5px;
+    position: relative;
+}
+
+.wtb-local .retailers-local .retailer-block .location {
+    padding-top: 23px
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock {
+    font-weight: bold
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock.in-stock {
+    color: #6fb105
+}
+
+.wtb-local .retailers-local .retailer-block .options .stock.out-stock {
+    color: red
+}
+
+.wtb-local .retailers-local.retailer-block .options .buy-options {
+    line-height: 1
+}
+
+.wtb-local .retailers-local .retailer-block .retailer-info .panel-title {
+    margin-top: 0
+}
+
+.wtb-local .retailers-local .retailer-block .retailer-info .panel-body .btn {
+    margin-bottom: 10px
+}
+
+.wtb-local .retailers-local .retailer-block .retailer-info .panel-body {
+    border-top: 1px dotted;
+    padding-top: 5px
+}
+
+.wtb-local .headers {
+    background: #202969;
+    overflow: auto;
+    margin: 0px -15px 15px
+}
+
+.disclaimer {
+    text-align: left;
+    font-size: 9px;
+    position: absolute;
+    bottom: 0
+}
+
+.oosmessage {
+    overflow: hidden;
+    text-align: center;
+    padding: 5%;
+    color: #333
+}
+
+.oosmessage h3 {
+    padding: 10px 30px;
+    font-size: 16px
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #7ec04a;
+    padding: 5px 3px 4px;
+    transition: all 0.2s;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 0px;
+}
+
+.btn.btn-addtocart,
+.btn.btn-pickup,
+.btn.btn-directions {
+    color: #00136f;
+    background: #dbf3ff
+}
+
+.btn:active {
+    /*color: #e51937;*/
+    /*background-color: #fff;*/
+}
+
+.btn:hover {
+    background-color: #8fd7fe;
+    color: #fff
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-find {
+    background: #fff;
+    font-size: 16px;
+    padding: 6px
+}
+
+.gm-style .gm-style-iw {
+    font-weight: 300;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: initial!important;
+    width: initial!important;
+    top: 10px!important;
+    left: 10px!important;
+}
+
+.gm-style .gm-style-iw > div {
+    max-width: initial!important;
+    max-height: initial!important;
+    display: block!important;
+}
+
+.info-window {
+    text-align:left;
+    padding: 5px;
+}
+
+.info-window .store-title {
+    font-size:16px;
+}
+
+.info-window .store-logo {
+    max-width: 121px;
+    max-height: 42px;
+    margin-bottom: 10px;
+    display: none;
+}
+.info-window .store-address {
+}
+.info-window .store-hours {
+    margin-bottom:0;
+    display: none;
+}
+.info-window .store-hours:before {
+    font-family: 'Material Icons';
+    content: 'access_time ';
+}
+.info-window .store-phone {
+    /*display:none;*/
+    margin-bottom:0;
+    margin-left: 20px;
+    color: #666;
+    font-weight: bold;
+    position: relative;
+}
+.info-window .store-phone span {
+    display: none;
+}
+.info-window .store-phone:before {
+    font-family: 'Material Icons';
+    content: 'phone ';
+    color: #266bd6;
+    font-size: 16px;
+    position: absolute;
+    left: -18px;
+}
+.info-window .store-direction {
+    margin-bottom:0;
+    margin-left: 20px;
+    color: #666;
+    font-weight: bold;
+    position: relative;
+    margin-top: 5px;
+}
+.info-window .store-direction:before {
+    font-family: 'Material Icons';
+    content: 'directions_car ';
+    color: #266bd6;
+    font-size: 16px;
+    position: absolute;
+    left: -18px;
+}
+
+.pac-container {
+    background-color: #fff;
+    position: absolute !important;
+    z-index: 1000;
+    border-radius: 2px;
+    border-top: 1px solid #d9d9d9;
+    font-family: Helvetica, Arial, sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.pac-container:after {
+    content: "";
+    padding: 1px 1px 1px 0;
+    height: 16px;
+    text-align: right;
+    display: block;
+    background-image: url(//maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 104px 16px
+}
+
+.hdpi.pac-container:after {
+    background-image: url(//maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2_hdpi.png)
+}
+
+.pac-item {
+    cursor: default;
+    padding: 0 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 30px;
+    text-align: left;
+    border-top: 1px solid #e6e6e6;
+    font-size: 11px;
+    color: #999
+}
+
+.pac-item:hover {
+    background-color: #fafafa
+}
+
+.pac-item-selected,
+.pac-item-selected:hover {
+    background-color: #ebf2fe
+}
+
+.pac-matched {
+    font-weight: 700
+}
+
+.pac-item-query {
+    font-size: 13px;
+    padding-right: 3px;
+    color: #000
+}
+
+.pac-icon {
+    width: 15px;
+    height: 20px;
+    margin-right: 7px;
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(//maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+    background-size: 34px
+}
+
+.hdpi .pac-icon {
+    background-image: url(//maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+}
+
+.pac-icon-search {
+    background-position: -1px -1px
+}
+
+.pac-item-selected .pac-icon-search {
+    background-position: -18px -1px
+}
+
+.pac-icon-marker {
+    background-position: -1px -161px
+}
+
+.pac-item-selected .pac-icon-marker {
+    background-position: -18px -161px
+}
+
+.pac-placeholder {
+    color: gray
+}
+
+.custom-prediction-label {
+    font-style: italic
+}
+
+.pac-container {
+    z-index: 9999
+}
+
+.ps-container > .ps-scrollbar-y-rail {
+    opacity: 0.4 !important
+}
+
+.ps-container > .ps-scrollbar-y-rail .ps-scrollbar-y {
+    background-color: #00136f !important;
+    right: 1px !important;
+    width: 4px !important
+}
+
+.nearby {
+    cursor: pointer
+}
+
+.in-stock {
+    color: #6fb105
+}
+
+.in-stock b {
+    color: #6fb105
+}
+
+.out-stock {
+    color: red
+}
+
+.out-stock b {
+    color: red
+}
+
+.badge,
+#search-icon {
+    cursor: pointer;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #e1e71b;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto
+}
+
+.loader-small {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #e1e71b;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto
+}
+
+/* MapBox styles */
+#wtb-mapbox-map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mapboxgl-marker {
+    background-size: cover;
+    vertical-align: top;
+    min-height: 39px;
+    min-width: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@media (min-width: 576px) {
+    .wtb-title .title .desc-container .buyonline {
+        text-align: right;
+    }
+}
+
+@media (max-width: 730px) {
+    .wtb-nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wtb-nav .nav-tabs {
+        margin-top: 0px;
+    }
+    .wtb-nav .group {
+        padding-right: 0px;
+    }
+    .wtb-nav .nav-tabs .nav-item .nav-link {
+        padding: 15px 10px;
+    }
+    .product_dropdown {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    #wtbMapContainer {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #wtbLocalResultsContainer {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wtb-local .wtb-local-map #map {
+        height: 200px;
+    }
+
+    .wtb-local .wtb-local-map .angular-google-map {
+        height: 205px
+    }
+
+    .wtb-local .retailers-local #localList {
+        height: calc(100vh - 480px) !important;
+    }
+}
+
+@media (max-width: 615px) {
+    .wtb-title .title .desc-container .desc-image {
+        /* display: none; */
+    }
+    .wtb-title .title .desc-container .desc-image img {
+        max-height: 70px;
+    }
+    .wtb-online {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    #wtb-container {
+        height: 100vh;
+    }
+
+    .wtb-title {
+        min-height: 60px;
+        padding-top: 5px
+    }
+
+    .wtb-title .title {
+        margin-bottom: 5px;
+    }
+
+    .wtb-title .title .desc-container .desc-image {
+        /* display: none; */
+    }
+
+    .wtb-title .title .desc-container .desc-text {
+        /*flex: 0 0 50%;*/
+        /*max-width: 50%;*/
+    }
+
+    .wtb-title .title .desc-container .desc-text h3 {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    .wtb-title .title .desc-container .buyonline {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .wtb-title .title .desc-container .buyonline .price p {
+        font-size: 18px;
+        margin: 0 0 5px 0;
+        line-height: 1.2;
+    }
+
+    .wtb-local .wtb-local-map #map {
+        height: 200px;
+    }
+
+    .wtb-local .wtb-local-map .angular-google-map {
+        height: 205px
+    }
+    .wtb-local .retailers-local #localList {
+        height: calc(100vh - 450px) !important;
+    }
+
+    .wtb-online .retailers-online {
+        max-height: calc(100vh - 140px);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wtb-online .retailers-online .retailer-block {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wtb-online .retailers-online .retailer-block .nearby br {
+        display: none
+    }
+    .wtb-online .retailers-online .retailer-block .logo {
+        width: 33%;
+        text-align: left;
+    }
+    .wtb-online .retailers-online .retailer-block .stock {
+        width: 33%;
+    }
+    .wtb-online .retailers-online .retailer-block .stock .price {
+        width: 100%;
+        font-size: 14px;
+    }
+    .wtb-online .retailers-online .retailer-block .stock .status {
+        width: 100%;
+        font-size: 14px;
+    }
+    .wtb-online .retailers-online .retailer-block .stock .status::before {
+        margin-left: -14px;
+    }
+    .wtb-online .retailers-online .retailer-block .buy {
+            width: 33%;
+            text-align: right;
+        }
+}
+
+@media (max-width: 480px) {
+    #wtb-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .wtb-title {
+        padding: 5px 10px 0px;
+    }
+    .wtb-title .title .desc-container .desc-text {
+        padding: 0px 0px;
+        margin-top: 0px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .wtb-title .title .desc-container .desc-image {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        text-align: left;
+    }
+    .wtb-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .wtb-nav .group {
+        padding-right: 0px;
+    }
+    .wtb-nav .group .nav-tabs {
+        padding-right: 0px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .wtb-nav .group .nav-item {
+        width: 50%;
+        margin-right: 0px !important;
+    }
+    .wtb-nav .group .nav-tabs .nav-item .nav-link {
+        font-size: 12px;
+        padding: 10px 5px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .product_dropdown {
+        width: 95%;
+        right: auto;
+    }
+    .product_dropdown #variantSelect {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    .wtb-online {
+        height: calc(100vh - 200px);
+    }
+    .wtb-online .retailer-block {
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .wtb-online .retailer-block .logo {
+        width: 35%;
+        display: inline-block;
+    }
+    .wtb-online .retailer-block .price {
+        width: 30%;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .wtb-online .retailer-block .buy {
+        width: 35%;
+        display: inline-block;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .wtb-online .retailers-online .retailer-block .logo {
+        width: 28%;
+    }
+    .wtb-online .retailers-online .retailer-block .stock {
+        width: 44%;
+    }
+    .wtb-online .retailers-online .retailer-block .buy {
+        width: 28%;
+    }
+}
+
+@media (max-width: 300px) {
+    .wtb-title .title .desc-container .desc-text {
+        padding: 0px 0px;
+    }
+    .wtb-title .title .desc-container .desc-text h3 {
+        font-size: 16px;
+    }
+    .wtb-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .product_dropdown {
+        width: 92%;
+    }
+}
+
+/*FIXES*/
+#status_direct i.material-icons {
+    font-size: 14px;
+}
+
+/* Bl-697 */
+
+.tab-content #offline {
+    opacity: 1;
+    display: block;
+}
+
+#wtb-container {
+    max-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    min-height: 1352px;
+}
+
+.wtb-content.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tab-content {
+    padding: 0;
+}
+
+#online {
+    max-height: 320px;
+    overflow-y: scroll;
+}
+
+.tab-content #online:before,
+.tab-content #offline:before {
+    content: "TROVA ONLINE";
+    display: block;
+    padding: 20px 10px;
+    color: rgb(47, 53, 61);
+    font-family: 'LG_Smart', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.tab-content #offline:before {
+    content: "TROVA NELLE VICINANZE";
+}
+
+.wtb-online {
+    margin-top: 0;
+    display: flex;
+    height: auto;
+}
+
+.wtb-online.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wtb-online .retailer-block {
+    margin: 0;
+    padding: 8px;
+    flex: 0 0 25%;
+}
+
+.wtb-online .retailer-block .retailer-block-content-wrapper {
+    height: 240px;
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wtb-online .retailer-block .logo {
+    width: 100%
+}
+
+.wtb-online .retailer-block .logo a img {
+    max-width: 120px;
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+.wtb-online .retailer-block .price {
+    display: none;
+}
+
+.wtb-online .retailer-block .stock {
+    display: block;
+    width: 100%;
+}
+
+.wtb-online .retailer-block .stock p {
+    margin: 10px 0;
+    color: rgb(0, 134, 28);
+    font-family: arial;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 37px;
+    height: 37px;
+    text-align: center;
+}
+
+.wtb-online .retailer-block .buy {
+    width: 100%;
+}
+
+.wtb-online .retailer-block .buy .btn {
+    background-color: #a50034;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0;
+    color: #fff;
+    padding: 0 8px;
+    height: 45px;
+    line-height: 45px;
+    min-width: 175px;
+    width: auto;
+    max-width: initial;
+    font-family: 'LG_Smart', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+}
+
+@media (max-width: 1024px) {
+    .wtb-online .retailer-block .buy .btn{
+        min-width: 90px;
+        width: calc(100% - 40px);
+    }
+}
+
+
+.wtb-online .retailer-block .buy .btn.btn-outstock {
+    background-color: transparent;
+    border-color: #a50034;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    color: #a50034;
+    max-width: initial;
+    padding: 0 8px;
+    height: 45px;
+    line-height: 45px;
+    min-width: 175px;
+    width: auto;
+    max-width: initial;
+    font-family: 'LG_Smart', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+    .wtb-online .retailer-block .buy .btn,
+    .wtb-online .retailer-block .buy .btn.btn-outstock {
+        min-width: 90px;
+        width: calc(100% - 40px);
+    }
+}
+
+.wtb-local {
+    position: relative;
+}
+
+.wtb-local.row {
+    margin: 0;
+}
+
+#wtbMapContainer {
+    width: 100%;
+    height: 700px;
+    padding: 0;
+}
+
+.wtb-local .wtb-local-map #map {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+@media(min-width: 1024px) {
+    #wtbLocalResultsContainer {
+        position: absolute;
+        width: 370px;
+        margin: 20px;
+        padding: 0 15px;
+        left: 0;
+        height: calc(100% - 40px);
+        background-color: rgb(255,255,255);
+        box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.tab-content {
+    height: 100%;
+}
+
+.tab-content #location {
+    height: 100%;
+}
+
+.tab-content #location .map-search {
+    padding: 15px;
+}
+
+.tab-content #location .retailers-local {
+    height: calc(100% - 78px);
+    padding: 10px 0;
+}
+
+.tab-content #location .retailers-local #localList{
+    height: calc(100% - 20px)!important;
+    margin: 10px 0;
+}
+
+.retailers-local .retailer-block {
+    margin:0;
+    padding: 20px;
+}
+
+.fa.fa-map-marker {
+    display: none;
+}
+
+/* localResultsOnMap */
+
+.wtb-local .retailers-local .retailer-block {
+    border-bottom: 1px solid rgb(226,229,255);
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap {
+    width: 100%;
+    display: flex;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details {
+    flex: 0 0 65%;
+    max-width: initial;
+    padding: 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options {
+    flex: 0 0 35%;
+    max-width: initial;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .box {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .box .badge {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    color: white;
+    /* background-image: url(https://origin.where-to-buy.co/dev/widgetv3/images/black-marker.png); */
+    background-image: url(./images/LG-marker.png);
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .address {
+    margin: 10px 0 0 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .phone {
+    margin: 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .buy {
+    margin: 15px 0 0 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .directions {
+    margin: 2.5px 0 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 0;
+    text-align: right;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options p {
+    margin: 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options .stock .status {
+    margin: 0;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .address,
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .buy a,
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .directions a,
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options .hours {
+    color: rgb(53, 53, 53);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .phone:before {
+    color: rgb(165, 0, 52);
+    content: "phone ";
+    font-family: 'Material Icons';
+    font-size: 16px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .phone a {
+    color: rgb(51, 51, 51);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .buy:before {
+    color: rgb(165, 0, 52);
+    content: "open_in_new ";
+    font-family: 'Material Icons';
+    font-size: 16px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .details .directions:before {
+    color: rgb(165, 0, 52);
+    content: "directions_car ";
+    font-family: 'Material Icons';
+    font-size: 16px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options .distanceUnits {
+    color: rgb(47,53,61);
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsOnMap .options .status {
+    color: rgb(102,102,102);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* .localResultsUnderMap */
+
+.wtb-local .retailers-local .retailer-block .localResultsUnderMap {
+    width: 100%;
+    display: flex;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+.wtb-local .retailers-local .retailer-block .localResultsUnderMap .details .box .badge {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    color: white;
+    /* background-image: url(https://origin.where-to-buy.co/dev/widgetv3/images/black-marker.png); */
+    background-image: url(./images/LG-marker.png);
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options {
+    flex: 0 0 20%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .box .pin {
+    display: inline-block;
+    vertical-align:  top;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .distanceUnits {
+    color: rgb(47,53,61);
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .status {
+    color: rgb(102,102,102);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .address {
+    padding-right: 10px;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .address,
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .hours {
+    color: rgb(53,53,53);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .hours:before {
+    color: rgb(165,0,52);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options {
+    padding: 0;
+    text-align: right;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options .phone {
+    margin: 0;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options .buy,
+.retailers-local .retailer-block .localResultsUnderMap .options .directions {
+    margin: 10px 0 0 0;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options .phone:before {
+    content: "phone ";
+    font-family: 'Material Icons';
+    color: rgb(165,0,52);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options .buy:before,
+.retailers-local .retailer-block .localResultsUnderMap .options .directions:before {
+    color: rgb(165,0,52);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.retailers-local .retailer-block .localResultsUnderMap .options .phone a,
+.retailers-local .retailer-block .localResultsUnderMap .options .buy a,
+.retailers-local .retailer-block .localResultsUnderMap .options .directions a {
+    color: rgb(53,53,53);
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Map Pin */
+
+.gm-style .gm-style-iw {
+    border-radius: 0;
+}
+
+.gm-style-iw.gm-style-iw-c {
+    max-width: initial !important;
+    max-height: initial !important;
+    padding: 10px !important;
+    top: initial !important;
+    left: initial !important;
+}
+
+.gm-style-iw-d {
+    overflow: initial;
+}
+
+.info-window {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 150px;
+}
+
+.info-window .store-title {
+    color:rgb(51, 51, 51);
+    font-family: 'LG_Smart', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.info-window .store-title {
+    margin: 0;
+}
+
+.info-window .store-address,
+.info-window .store-direction {
+    color:rgb(51, 51, 51);
+    font-family: 'LG_Smart', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+
+.info-window .store-direction a:before {
+    font-family: "Material Icons";
+    content: "directions_car ";
+    font-size: 16px;
+    font-weight: 700;
+    color: #a50034;
+    vertical-align: top;
+}
+
+.info-window .store-logo,
+.info-window .store-hours,
+.info-window .store-phone {
+    display: none;
+}
+
+/* responsive */
+
+.wtb-local .retailers-local .retailer-block .localResultsUnderMap {
+    display: none;
+}
+
+@media(max-width: 1023px) {
+    .wtb-local .map-search {
+        padding: 0 10px 10px 10px;
+        width: 100%;
+    }
+
+    .wtb-local .map-search #searchBoxParent {
+        border: 1px solid rgba(0, 0, 0);
+    }
+
+    #wtbMapContainer {
+        padding: 10px;
+    }
+
+    .tab-content #location .retailers-local #localList  {
+        height: auto !important;
+    }
+
+    .wtb-local .retailers-local #localList {
+        overflow-y: hidden !important;
+    }
+
+    .wtb-local .retailers-local .retailer-block .localResultsOnMap {
+        display: none;
+    }
+
+    .wtb-local .retailers-local .retailer-block .localResultsUnderMap {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .wtb-online .retailer-block {
+        flex: 0 0 50%;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow {
+        flex-direction: column;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .details {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .options {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    #wtb-container {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 456px) {
+    .retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .hours {
+        font-size: 12px;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .details .localResultsRow .localResultsColumn .hours:before {
+        font-size: 14px;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .options .phone a,
+    .retailers-local .retailer-block .localResultsUnderMap .options .buy a,
+    .retailers-local .retailer-block .localResultsUnderMap .options .directions a {
+        font-size: 12px;
+    }
+
+    .retailers-local .retailer-block .localResultsUnderMap .options .buy:before,
+    .retailers-local .retailer-block .localResultsUnderMap .options .directions:before {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .wtb-online .retailer-block {
+        flex: 0 0 100%;
+    }
+}
+

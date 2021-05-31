@@ -1,0 +1,4 @@
+window.TrackingAds.Tracking.TrackingPointId = 30;
+window.TrackingAds.Tracking.TrackingPointName = "LG|prodotto";
+try{
+}catch(e){}

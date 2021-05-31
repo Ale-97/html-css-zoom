@@ -1,0 +1,4 @@
+window.TrackingAds.Tracking.TrackingPointId = 25;
+window.TrackingAds.Tracking.TrackingPointName = "LG|mastertag";
+try{
+}catch(e){}

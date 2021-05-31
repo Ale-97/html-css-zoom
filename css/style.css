@@ -9,16 +9,26 @@ header{
     flex-direction: column;
     background-color: black;
 
+/* icone poste in'alto a destra  */
 }
+.icon-top{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-top > div{
+    background-color: rgb(80, 80, 80);
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+/* Contenuto Prinipale della pagina */
 .container{
     flex-grow: 1;
     padding: 20px;
     display: flex;
-    flex-direction:row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-
 }
 .img{
     height: 100px;
@@ -26,9 +36,17 @@ header{
     margin:0 2px;
     background-image: url(../img/foglia.jpg!d);
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
 }
-
-/*--- Nav della pagina ---*/
+.img > i {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    font-size: 10px;
+}
+/* Nav della pagina*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -44,10 +62,16 @@ nav li{
     font-weight: bold;
     padding: 15px;
     align-items: center;
-
 }
-nav i{
+.options{
+    display: flex;
+}
+nav li > i,.options > div:first-child > i{
     font-size: 25px;
+}
+.options > div:last-child > i{
+    font-size: 10px;
+    margin: 0 0 0 10px;
 }
 .li-green{
     color: greenyellow;
